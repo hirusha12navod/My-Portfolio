@@ -3,21 +3,35 @@
   padding: 0;
 }
 
-.main{
-  width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(assets/home\ image.jpg);
-  background-position: center;
-  background-size: cover;
+.pages{
+  position: relative;
   height: 100vh;
 }
 
-.menu{
+header{
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+/* .menu{
   width: 400px;
   float: left;
   height: 70px;
+} */
+
+header>nav{
+  position: absolute;
+  right: 24px;
+  top: 4px;
+  bottom: 0;
 }
 
-ul{
+header>nav>ul{
   position: absolute;
   right: 5%;
   display: flex;
@@ -25,14 +39,14 @@ ul{
   align-items: center;
 }
 
-ul li{
+header>nav>ul>li{
   list-style: none;
-  margin-left: 62px;
+  margin-left: 44px;
   margin-top: 27px;
   font-size: 14px;
 }
 
-ul li a{
+header>nav>ul>li>a{
   text-decoration: none;
   color: #fff;
   font-family: arial;
@@ -43,24 +57,101 @@ ul li a{
 ul li a:hover{
   color: #ff7200;
 }
-.content{
-  width: 1200px;
-  height: auto;
-  margin: auto;
-  color: #fff;
+#welcome{
+  padding-bottom: 20px;
+  color: white;
+}
+
+#hello{
+  padding-bottom: 20px;
+  color: white;
+}
+
+#article>p:nth-child(1){
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+#home{
+  background: url(assets/home\ image.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+
+#homenav{
+  padding-top: 20px;
   position: relative;
 }
-.content.par{
-  padding-left: 20px;
-  padding-bottom: 25px;
-  font-family: Arial;
-  letter-spacing: 1.2px;
-  line-height: 30px;
+
+#homenav>ul>a>img{
+  padding-right: 10px;
+  width: 40px;
+  height: 40px;
 }
-.content.h2{
-  font-family: 'Times New Roman';
-  font-size: 50px;
-  padding-left: 20px;
-  margin-top: 9%;
-  letter-spacing: 2px;
+
+#home>div:nth-child(1){
+  margin-left: 125px;
 }
+
+#personal_details{
+  position: absolute;
+  top: 261px;
+}
+
+#home>div:nth-child(2){
+  width: 35%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 10px;
+}
+
+#home>div:nth-child(2)>img{
+  position: absolute;
+  top: -10%; 
+  right: 10%; 
+  transform: translateY(50%); 
+  width: 95%;
+  height: 60%;
+}
+
+#home>div>article>p{
+  font-size: 20px;
+  color: white;
+}
+
+#home>div>hgroup>h2{
+  font-size: 40px;
+}
+
+#personal_details>button{
+  background-color: #ff7200;
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  top: 226px;
+  left: 76px;
+  border-radius: 5px;
+  color: white;
+  border: #ff7200 solid;
+}
+
+#personal_details>button:hover{
+  transition: all;
+
+  color: black;
+  box-shadow: 2px 2px 5px #fda257;
+  font-weight: bold;
+}
+
+section>h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+-----------------------------------------about------------------------------------------------------------
