@@ -609,11 +609,20 @@ main>section:nth-child(2){
   height: 110px;
 }
 
-#assignment>section>div>h3{
+#assignment>section>div>a{
   margin-top: 50px;
   align-self: center;
   color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #6F1E51;
+  border-radius: 10px;
 }
+
+#assignment>section>div>a:hover{
+  box-shadow: 0px 6px 10px #c27ca8;
+}
+
 
 /* -------------------------------entertainment--------------------------------- */
 
